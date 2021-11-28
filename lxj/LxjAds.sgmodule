@@ -1,0 +1,17 @@
+#!name=联享家去广告
+#!desc=联享家去广告
+#!system=ios
+
+[Rule]
+DOMAIN,bd.hori-gz.com,REJECT
+DOMAIN,vpms.hori-gz.com,REJECT
+DOMAIN,im.hori-gz.com,REJECT
+DOMAIN,yxhd.hori-gz.com,REJECT
+DOMAIN,adfile.hori-gz.com,REJECT
+DOMAIN-SUFFIX,snssdk.com,REJECT
+DOMAIN-SUFFIX,kinglian.cn,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+
+[MITM]
+hostname = %APPEND% sso.lxjapp.com:8443, nfys-static.kinglian.cn:443, ulogs.umeng.com:443, lxj.hori-gz.com:8443, mms.hori-gz.com:8443, yxhd.hori-gz.com:443
+
